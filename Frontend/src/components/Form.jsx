@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Form.css";
-import Shauryam from "../shauryam.jpg"
+
 
 function Form() {
   const [data, setData] = useState([]);
