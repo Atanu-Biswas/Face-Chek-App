@@ -1,0 +1,35 @@
+.profileImage{
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.profileImage img{
+    width: 200px;
+    height: 200px;
+}
+.basicDetails{
+    text-align: center;
+}
+.formEntry{
+    padding: 10px 5px;
+    margin: 20px 0px;
+}
+.formContainer{
+    border: 1px solid black;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.noImage{
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noImage h1{
+    text-align: center;
+}
