@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_file, Response
 import supabase
 import uuid
 import base64
+from flask_cors import CORS
 from urllib.parse import quote
 
 supabase_url = "https://espatgyfiagrnugcyvvu.supabase.co"
@@ -10,6 +11,7 @@ supabase_client = supabase.create_client(supabase_url, supabase_key)
 
 
 app = Flask(__name__)
+CORS(app)
  
 
 
@@ -92,7 +94,7 @@ def add_user():
     Image = str(my_list[-2])
     Image=Image[9:-1]
     Image=Image[2:]
-    
+    Image = "data:image/jpeg;base64,/"+Image    
 
     
        
